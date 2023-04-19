@@ -1,0 +1,16 @@
+QT.webenginecore_private.VERSION = 5.15.2
+QT.webenginecore_private.name = QtWebEngineCore
+QT.webenginecore_private.module =
+QT.webenginecore_private.libs = $$QT_MODULE_LIB_BASE
+QT.webenginecore_private.includes = $$QT_MODULE_INCLUDE_BASE/QtWebEngineCore/5.15.2 $$QT_MODULE_INCLUDE_BASE/QtWebEngineCore/5.15.2/QtWebEngineCore
+QT.webenginecore_private.frameworks =
+QT.webenginecore_private.depends = qml_private quick_private gui_private core_private webenginecore
+QT.webenginecore_private.uses =
+QT.webenginecore_private.module_config = v2 internal_module
+QT.webenginecore_private.enabled_features = webengine-alsa webengine-printing-and-pdf webengine-ozone webengine-pepper-plugins webengine-pulseaudio webengine-v8-snapshot-support webengine-webrtc
+QT.webenginecore_private.disabled_features = webengine-embedded-build webengine-kerberos webengine-nodejs webengine-poppler-cpp webengine-proprietary-codecs webengine-webrtc-pipewire
+QMAKE_INCDIR_WEBENGINE_ALSA = /usr/include/alsa
+QMAKE_DEFINES_WEBENGINE_PULSEAUDIO = _REENTRANT
+QMAKE_INCDIR_WEBENGINE_PULSEAUDIO = /usr/include/glib-2.0 /usr/lib64/glib-2.0/include
+QMAKE_LIBS_WEBENGINE_ALSA = -lasound
+QMAKE_LIBS_WEBENGINE_PULSEAUDIO = -lpulse-mainloop-glib -lpulse -lglib-2.0
